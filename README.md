@@ -39,15 +39,15 @@ Use instance_destroy(id) to destroy UI elements you create.
 Use button_create() to create a button.
 
 ### Arguments
-x: x position
+**x:** x position
 
-y: y position
+**y:** y position
 
-w: width
+**w:** width
 
-h: height
+**h:** height
 
-text: text to display
+**text:** text to display
 
 [animate]: whether to enable effects on the button
            default: true
@@ -88,13 +88,13 @@ Panels are rectangular areas that group buttons inside them.
 Use panel_create() to create a panel.
 
 ### Arguments
-x: x position
+**x:** x position
 
-y: y position
+**y:** y position
 
-w: width
+**w:** width
 
-h: height
+**h:** height
 
 [text]: text to display
         
@@ -124,4 +124,13 @@ Use panel_move(panel, x+, y+) to add to the position of a panel.
 
 Use textbox_create() to create a textbox.
 
+### Arguments
+**x:** x position
 
+**y:** y position
+
+**w:** width
+
+**h:** height
+
+**[text]:** text to display, optional
