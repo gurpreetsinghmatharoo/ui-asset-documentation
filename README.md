@@ -9,8 +9,9 @@ Arguments inside [] are optional
 
 ## GUI Mode
 
-Use ui_gui_mode(true/false) to enable/disable GUI mode.
-Default: true
+Use `ui_gui_mode(true/false)` to enable/disable GUI mode.
+
+*Default: true*
 
 With GUI mode on, the UI will be drawn on the screen/GUI layer.
 Without GUI mode, it will be drawn inside the room.
@@ -32,7 +33,7 @@ the GUI layer.
 
 ## Destroying
 
-Use instance_destroy(id) to destroy UI elements you create.
+Use `instance_destroy(id)` to destroy UI elements you create.
 
 # Buttons
 
