@@ -3,53 +3,9 @@
 
 Creating & managing UI elements is easier than ever!
 
-### [Jump Straight to Elements](https://github.com/gurpreetsinghmatharoo/ui-asset-documentation/blob/master/README.md#elements)
-
 # Note
 
 Arguments inside [] are optional
-
-## GUI Mode
-
-Use `ui_gui_mode(true/false)` to enable/disable GUI mode.
-
-*Default: true*
-
-With GUI mode on, the UI will be drawn on the screen/GUI layer.
-Without GUI mode, it will be drawn inside the room.
-
-## Manual Placement
-
-If you don't want to use code and want to manually place the UI elements
-in the room, you can do so. But, you will need to fill in some variables
-in those instances' Creation Codes.
-
-For that particular element, open its create script (for example, 'button_create'
-for buttons) and go to the '//Set variables' part. See which variables
-are being set, and initialize them in the Creation Code.
-
-Of course, you don't need to do this if you *are* using the scripts.
-
-Also, the elements you place using the room editor are not drawn to
-the GUI layer.
-
-## Destroying
-
-Use `instance_destroy(id)` to destroy UI elements you create.
-
-## Sprites
-
-Use `ui_sprite()` to change the sprites for every type of element.
-
-### Arguments:
-**Buttons:** Sprite for buttons
-**Panels:** Sprite for panels
-**Text Field:** Sprite for text fields
-**Slider:** Sprite for sliders
-
-The sprite must a square sprite of a 3x3 grid. It'll be [9-slice-stretched](https://marketplace.yoyogames.com/assets/6397/draw-9-slice-sprites) to fit the GUI.
-
-If you don't want to change the sprite for any of these arguments, just pass -1.
 
 # Elements
 # Buttons
@@ -152,3 +108,48 @@ Use textbox_create() to create a textbox.
 **h:** height
 
 **[text]:** text to display, optional
+
+# GUI Mode
+
+Use `ui_gui_mode(true/false)` to enable/disable GUI mode.
+
+*Default: true*
+
+With GUI mode on, the UI will be drawn on the screen/GUI layer.
+Without GUI mode, it will be drawn inside the room.
+
+# Manual Placement
+
+If you don't want to use code and want to manually place the UI elements
+in the room, you can do so. But, you will need to fill in some variables
+in those instances' Creation Codes.
+
+For that particular element, open its create script (for example, 'button_create'
+for buttons) and go to the '//Set variables' part. See which variables
+are being set, and initialize them in the Creation Code.
+
+Of course, you don't need to do this if you *are* using the scripts.
+
+Also, the elements you place using the room editor are not drawn to
+the GUI layer.
+
+# Destroying
+
+Use `instance_destroy(id)` to destroy UI elements you create.
+
+# Sprites
+
+Use `ui_sprite()` to change the sprites for every type of element.
+
+### Arguments:
+**Buttons:** Sprite for buttons
+
+**Panels:** Sprite for panels
+
+**Text Field:** Sprite for text fields
+
+**Slider:** Sprite for sliders
+
+The sprite must a square sprite of a 3x3 grid. It'll be [9-slice-stretched](https://marketplace.yoyogames.com/assets/6397/draw-9-slice-sprites) to fit the GUI.
+
+If you don't want to change the sprite for any of these arguments, just pass -1.
