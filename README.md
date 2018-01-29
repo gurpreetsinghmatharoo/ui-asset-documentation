@@ -3,6 +3,8 @@
 
 Creating & managing UI elements is easier than ever!
 
+## [Jump To GIFs](https://i.imgur.com/xHJy4sX.gif)
+
 # Note
 
 Arguments inside [] are optional
@@ -195,7 +197,9 @@ If you don't want to change the sprite for any of these arguments, just pass -1.
 # GIFs
 
 ![Panels](https://i.imgur.com/nN8HgNw.gif)
+
 ^ Panel with three buttons
 
 ![Text Field](https://i.imgur.com/xHJy4sX.gif)
+
 ^ Text Field
