@@ -3,6 +3,8 @@
 
 Creating & managing UI elements is easier than ever!
 
+### [Jump Straight to Elements](https://github.com/gurpreetsinghmatharoo/ui-asset-documentation/blob/master/README.md#elements)
+
 # Note
 
 Arguments inside [] are optional
@@ -34,6 +36,20 @@ the GUI layer.
 ## Destroying
 
 Use `instance_destroy(id)` to destroy UI elements you create.
+
+## Sprites
+
+Use `ui_sprite()` to change the sprites for every type of element.
+
+### Arguments:
+**Buttons:** Sprite for buttons
+**Panels:** Sprite for panels
+**Text Field:** Sprite for text fields
+**Slider:** Sprite for sliders
+
+The sprite must a square sprite of a 3x3 grid. It'll be [9-slice-stretched](https://marketplace.yoyogames.com/assets/6397/draw-9-slice-sprites) to fit the GUI.
+
+If you don't want to change the sprite for any of these arguments, just pass -1.
 
 # Elements
 # Buttons
