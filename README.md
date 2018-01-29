@@ -25,9 +25,7 @@ Use button_create() to create a button.
 
 **text:** text to display
 
-**[animate]:** whether to enable effects on the button
-           
-*default: true*
+**[animate]:** whether to enable effects on the button (*default: true*)
 
 Store the returned id in a variable.
 
