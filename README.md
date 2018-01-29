@@ -3,7 +3,7 @@
 
 Creating & managing UI elements is easier than ever!
 
-## [Jump To GIFs](https://i.imgur.com/xHJy4sX.gif)
+## [Jump To GIFs](https://github.com/gurpreetsinghmatharoo/ui-asset-documentation/blob/master/README.md#gifs)
 
 # Note
 
