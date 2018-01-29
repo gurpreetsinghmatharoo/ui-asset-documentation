@@ -191,3 +191,11 @@ Use `ui_sprite()` to change the sprites for every type of element.
 The sprite must a square sprite of a 3x3 grid. It'll be [9-slice-stretched](https://marketplace.yoyogames.com/assets/6397/draw-9-slice-sprites) to fit the GUI.
 
 If you don't want to change the sprite for any of these arguments, just pass -1.
+
+# GIFs
+
+![Panels](https://i.imgur.com/nN8HgNw.gif)
+^ Panel with three buttons
+
+![Text Field](https://i.imgur.com/xHJy4sX.gif)
+^ Text Field
