@@ -196,10 +196,10 @@ If you don't want to change the sprite for any of these arguments, just pass -1.
 
 # GIFs
 
+## Panel with three buttons
+
 ![Panels](https://i.imgur.com/nN8HgNw.gif)
 
-^ Panel with three buttons
+## Text Field
 
 ![Text Field](https://i.imgur.com/xHJy4sX.gif)
-
-^ Text Field
