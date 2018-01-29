@@ -55,7 +55,7 @@ You can use a button's x/y variables to move it.
         
 ```buttonBuy.y += 4;```
 
-# PANELS
+# Panels
 
 Panels are rectangular areas that group buttons inside them.
 
@@ -74,8 +74,8 @@ Use panel_create() to create a panel.
         
 Store the returned id in a variable.
 
-    Example:
-        panelMain = panel_create(8, 8, 256, 128, "Main");
+### Example
+```panelMain = panel_create(8, 8, 256, 128, "Main");```
         
 ## Adding elements inside a panel
 
@@ -108,6 +108,44 @@ Use textbox_create() to create a textbox.
 **h:** height
 
 **[text]:** text to display, optional
+
+## Text
+
+Use the `eText` variable to get the text currently in a text field.
+
+### Example
+```
+var tf_text = tfName.eText; //Gets the text inside the 'tfName' text field
+```
+
+# Sliders
+
+Use slider_create() to create a slider.
+
+### Arguments
+**x:** x position
+
+**y:** y position
+
+**w:** width
+
+**h:** height
+
+**[head_pos]:** initial position of the head, optional, 0-1
+
+**[text]:** text to display, optional
+
+**head_pos** is where position of the head on the slider, and it ranges from 0 to 1.
+
+## Head Position
+
+Use the `headPos` variable to get the head position of a slider.
+It will be in a 0 to 1 range.
+
+### Example
+```
+var amount = sdAmount.headPos; //Gets the head position of the 'sdAmount' slider
+```
 
 # GUI Mode
 
