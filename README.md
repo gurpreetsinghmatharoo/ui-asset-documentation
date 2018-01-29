@@ -35,6 +35,7 @@ the GUI layer.
 
 Use `instance_destroy(id)` to destroy UI elements you create.
 
+# Elements
 # Buttons
 
 Use button_create() to create a button.
