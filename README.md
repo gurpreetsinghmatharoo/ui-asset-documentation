@@ -136,7 +136,7 @@ Use slider_create() to create a slider.
 
 **[text]:** text to display, optional
 
-**head_pos** is where position of the head on the slider, and it ranges from 0 to 1.
+***head_pos** is where position of the head on the slider, and it ranges from 0 to 1.*
 
 ## Head Position
 
@@ -147,6 +147,74 @@ It will be in a 0 to 1 range.
 ```
 var amount = sdAmount.headPos; //Gets the head position of the 'sdAmount' slider
 ```
+
+# Check Boxes
+
+Use checkbox_create() to create a checkbox.
+
+### Arguments
+**x:** x position
+
+**y:** y position
+
+**w:** width
+
+**h:** height
+
+**[text]:** text to display, optional
+
+**[enabled]:** whether the check box is enabled. By default, it is not.
+
+## Enabled
+
+Use the variable **eEnabled** to get whether a check box is enabled or not. It can be modified too.
+
+### Example
+```
+var enabled = checkbox.eEnabled;
+```
+
+# Radio Buttons
+
+Use radio_button_create() to create a radio button.
+
+### Arguments
+**x:** x position
+
+**y:** y position
+
+**w:** width
+
+**h:** height
+
+**group_name:** Name of the radio group (string)
+
+**[text]:** text to display, optional
+
+## Radio Group
+
+Use radio_group_create() to create a radio group.
+
+### Arguments
+**name:** name of the group (string)
+
+You need a radio group to be able to create any radio buttons. Only one radio button inside a radio group can be selected.
+
+### Example
+```
+radio_group_create("Food");
+radio_button_create(8, 8, 32, 32, "Food", "Pasta");
+radio_button_create(8, 40, 32, 32, "Food", "Pizza");
+radio_button_create(8, 72, 32, 32, "Food", "Burger");
+```
+
+## Enabled
+
+Just like the check box, you can use the **eEnabled** variable to get whether a radio button is selected or not.
+
+You can also use the function **radio_group_get_selected(group_name)** to get the ID of the radio button instance, in that group, that is selected. It returns `noone` (-4) if no radio button is selected.
+
+You can use the function **radio_toggle(id, true/false)** to change the state of a radio button.
 
 # GUI Mode
 
