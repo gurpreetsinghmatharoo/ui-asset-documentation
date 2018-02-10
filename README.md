@@ -12,7 +12,7 @@ Arguments inside [] are optional
 # Elements
 # Buttons
 
-Use button_create() to create a button.
+Use **button_create()** to create a button.
 
 ### Arguments
 **x:** x position
@@ -34,14 +34,14 @@ Store the returned id in a variable.
                    
 ## button_clicked()
 
-button_clicked(id) checks whether the button was clicked in this step.
+**button_clicked(id)** checks whether the button was clicked in this step.
 
 ### Example
 ```if (button_clicked(buttonBuy)) buyItem();```
 
 ## button_script()
 
-Using button_script(id, script) you can assign a script to run each the button is 
+Using **button_script(id, script)** you can assign a script to run each the button is 
 clicked. It will automatically run whenever the button is pressed.
 
 ### Example
@@ -58,9 +58,9 @@ You can use a button's x/y variables to move it.
 
 # Panels
 
-Panels are rectangular areas that group buttons inside them.
+Panels are rectangular areas that group elements inside them.
 
-Use panel_create() to create a panel.
+Use **panel_create()** to create a panel.
 
 ### Arguments
 **x:** x position
@@ -97,7 +97,7 @@ Use panel_move(panel, x+, y+) to add to the position of a panel.
 
 # Text Fields
 
-Use textbox_create() to create a textbox.
+Use **textbox_create()** to create a textbox.
 
 ### Arguments
 **x:** x position
@@ -121,7 +121,7 @@ var tf_text = tfName.eText; //Gets the text inside the 'tfName' text field
 
 # Sliders
 
-Use slider_create() to create a slider.
+Use **slider_create()** to create a slider.
 
 ### Arguments
 **x:** x position
@@ -150,7 +150,7 @@ var amount = sdAmount.headPos; //Gets the head position of the 'sdAmount' slider
 
 # Check Boxes
 
-Use checkbox_create() to create a checkbox.
+Use **checkbox_create()** to create a checkbox.
 
 ### Arguments
 **x:** x position
@@ -176,7 +176,7 @@ var enabled = checkbox.eEnabled;
 
 # Radio Buttons
 
-Use radio_button_create() to create a radio button.
+Use **radio_button_create()** to create a radio button.
 
 ### Arguments
 **x:** x position
@@ -193,7 +193,7 @@ Use radio_button_create() to create a radio button.
 
 ## Radio Group
 
-Use radio_group_create() to create a radio group.
+Use **radio_group_create()** to create a radio group, and **radio_group_delete()** to delete one.
 
 ### Arguments
 **name:** name of the group (string)
