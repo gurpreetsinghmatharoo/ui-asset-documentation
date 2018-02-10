@@ -216,6 +216,8 @@ You can also use the function **radio_group_get_selected(group_name)** to get th
 
 You can use the function **radio_toggle(id, true/false)** to change the state of a radio button.
 
+# ---------------------------
+
 # GUI Mode
 
 Use `ui_gui_mode(true/false)` to enable/disable GUI mode.
@@ -244,11 +246,19 @@ the GUI layer.
 
 Use `instance_destroy(id)` to destroy UI elements you create.
 
+# Theme
+
+You can change the theme by using **ui_theme(theme)**.
+
+Currently there are two themes: `theme.Old` and `theme.HQ`. The last one is the default.
+
 # Sprites
 
-Use `ui_sprite()` to change the sprites for every type of element.
+Use `ui_sprite()` to change the sprites for every type of element in a theme.
 
 ### Arguments:
+**Theme:** Theme to edit
+
 **Buttons:** Sprite for buttons
 
 **Panels:** Sprite for panels
@@ -257,7 +267,13 @@ Use `ui_sprite()` to change the sprites for every type of element.
 
 **Slider:** Sprite for sliders
 
-The sprite must a square sprite of a 3x3 grid. It'll be [9-slice-stretched](https://marketplace.yoyogames.com/assets/6397/draw-9-slice-sprites) to fit the GUI.
+**Checkbox:** Sprite for checkbox
+
+**Checktick:** Sprite for checkbox tick (enabled symbol)
+
+**Radiobuttons:** Sprite for radio button (circle, two subimages: first disabled, second enabled)
+
+Look at the default sprites for reference.
 
 If you don't want to change the sprite for any of these arguments, just pass -1.
 
