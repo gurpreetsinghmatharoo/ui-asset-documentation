@@ -250,7 +250,7 @@ Use `instance_destroy(id)` to destroy UI elements you create.
 
 You can change the theme by using **ui_theme(theme)**.
 
-Currently there are two themes: `theme.Old` and `theme.HQ`. The last one is the default.
+Currently there are two themes: `theme.Basic` and `theme.HQ`. HQ is the default theme.
 
 # Sprites
 
