@@ -121,7 +121,7 @@ var tf_text = tfName.eText; //Gets the text inside the 'tfName' text field
 
 # Text Areas
 
-Use **textarea_create()** to create a multi-line text field.
+Use **textarea_create()** to create a multi-line text area.
 
 ### Arguments
 **x:** x position
