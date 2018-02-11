@@ -97,7 +97,7 @@ Use panel_move(panel, x+, y+) to add to the position of a panel.
 
 # Text Fields
 
-Use **textbox_create()** to create a single-line text field.
+Use **textfield_create()** to create a single-line text field.
 
 ### Arguments
 **x:** x position
