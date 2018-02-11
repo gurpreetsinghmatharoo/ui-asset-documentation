@@ -312,3 +312,11 @@ If you don't want to change the sprite for any of these arguments, just pass -1.
 ## Text Field
 
 ![Text Field](https://i.imgur.com/xHJy4sX.gif)
+
+## Text Area
+
+![Text Area](https://i.imgur.com/pCotpKL.gif)
+
+## Slider & Checkbox
+
+![Slider & Checkbox](https://i.imgur.com/S001OGB.gif)
