@@ -97,7 +97,7 @@ Use panel_move(panel, x+, y+) to add to the position of a panel.
 
 # Text Fields
 
-Use **textbox_create()** to create a textbox.
+Use **textbox_create()** to create a single-line text field.
 
 ### Arguments
 **x:** x position
@@ -117,6 +117,32 @@ Use the `eText` variable to get the text currently in a text field.
 ### Example
 ```
 var tf_text = tfName.eText; //Gets the text inside the 'tfName' text field
+```
+
+# Text Areas
+
+Use **textarea_create()** to create a multi-line text field.
+
+### Arguments
+**x:** x position
+
+**y:** y position
+
+**w:** width
+
+**h:** height
+
+## Text
+
+You can use the `eText` variable to get the text in the text area. It'll return a string with a `#` to symbolize new lines.
+
+You can also use `lineList` to get a DS list that contains strings for the lines in the text area.
+
+### Example
+```
+var text = textArea.eText;
+var lines = textArea.lineList;
+var firstLine = ds_list_find_value(lines, 0);
 ```
 
 # Sliders
