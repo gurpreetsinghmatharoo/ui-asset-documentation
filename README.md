@@ -270,13 +270,16 @@ the GUI layer.
 
 # Size
 
-You can change the size of an element by modified its `eWidth` and `eHeight` variables.
+You can change the size of an element by modifying its `eWidth` and `eHeight` variables.
 
 ### Example
 ```
 var width_of_button = button.eWidth;
 
-if (increase_panel_size) panel.eWidth += 32;
+if (increase_panel_size){
+  panel.eWidth += 32;
+  panel.eHeight += 32;
+}
 ```
 
 # Destroying
