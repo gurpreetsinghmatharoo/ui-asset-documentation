@@ -297,6 +297,8 @@ if (increase_panel_size){
 
 Use `instance_destroy(id)` to destroy UI elements you create.
 
+Destroying panels will also destroy the elements inside them.
+
 # Theme
 
 You can change the theme by using **ui_theme(theme)**.
