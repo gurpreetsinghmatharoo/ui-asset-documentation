@@ -303,7 +303,7 @@ Destroying panels will also destroy the elements inside them.
 
 You can change the theme by using **ui_theme(theme)**.
 
-Currently there are two themes: `theme.Basic` and `theme.HQ`. HQ is the default theme.
+Currently there are two themes: `theme.Material` and `theme.HQ`. Material is the default theme.
 
 # Sprites
 
@@ -329,6 +329,17 @@ Use `ui_sprite()` to change the sprites for every type of element in a theme.
 Look at the default sprites for reference.
 
 If you don't want to change the sprite for any of these arguments, just pass -1.
+
+# Options
+
+Use `ui_theme_options()` to change the options for a theme.
+
+### Arguments:
+**Theme:** Theme to edit
+
+**Color:** Color for the elements. Default: `c_aqua` for Material, `c_white` for HQ
+
+**Font Color:** Font color for the text
 
 # GIFs
 
