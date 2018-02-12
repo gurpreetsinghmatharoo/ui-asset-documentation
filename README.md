@@ -268,6 +268,17 @@ Of course, you don't need to do this if you *are* using the scripts.
 Also, the elements you place using the room editor are not drawn to
 the GUI layer.
 
+# Size
+
+You can change the size of an element by modified its `eWidth` and `eHeight` variables.
+
+### Example
+```
+var width_of_button = button.eWidth;
+
+if (increase_panel_size) panel.eWidth += 32;
+```
+
 # Destroying
 
 Use `instance_destroy(id)` to destroy UI elements you create.
