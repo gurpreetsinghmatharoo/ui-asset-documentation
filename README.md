@@ -143,6 +143,17 @@ var lines = textArea.lineList;
 var firstLine = ds_list_find_value(lines, 0);
 ```
 
+## Options
+
+Use **textarea_options** to set some options for the text areas.
+
+### Arguments
+
+**id:** Text area ID to modify the options of. Use `all` to modify all text areas present at that time
+**wrapping:** Should the text wrap to the next line when it reaches the end of the current one? *Default: false*
+**dynamic_size:** Should the text area change its size according to the text inside it? *Default: true*
+                  If this is false, it will always stay the same size.
+
 # Sliders
 
 Use **slider_create()** to create a slider.
