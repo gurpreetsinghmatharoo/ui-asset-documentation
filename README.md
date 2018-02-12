@@ -86,8 +86,6 @@ Those elements will now move with the panel whenever it is moved.
 
 ### Example
 ```panel_add(panelMain, buttonBuy, buttonCancel);```
-        
-You can add up to 15 elements at once.
 
 ## Panel position
 
