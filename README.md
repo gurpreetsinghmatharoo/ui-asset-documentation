@@ -145,7 +145,7 @@ var firstLine = ds_list_find_value(lines, 0);
 
 ## Options
 
-Use **textarea_options** to set some options for the text areas.
+Use **textarea_options()** to set some options for the text areas.
 
 ### Arguments
 
@@ -153,7 +153,7 @@ Use **textarea_options** to set some options for the text areas.
 
 **wrapping:** Should the text wrap to the next line when it reaches the end of the current one? *Default: false*
 
-**dynamic_size:** Should the text area change its size according to the text inside it? *Default: true*
+**dynamic_size:** Should the text area change its size according to the text inside it? *Default: true.*
                   If this is false, it will always stay the same size.
 
 # Sliders
