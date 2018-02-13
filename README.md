@@ -342,9 +342,14 @@ Use `ui_theme_options()` to change the options for a theme.
 ### Arguments:
 **Theme:** Theme to edit
 
-**Color:** Color for the elements. Default: `c_aqua` for Material, `c_white` for HQ
+**Color:** Color for the elements
 
 **Font Color:** Font color for the text
+
+### Example
+```
+ui_theme_options(theme.Pixel, c_orange, c_blue); //Changes element color to orange and font color to blue, for the Pixel theme
+```
 
 # GIFs
 
