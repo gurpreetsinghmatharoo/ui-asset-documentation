@@ -303,7 +303,12 @@ Destroying panels will also destroy the elements inside them.
 
 You can change the theme by using **ui_theme(theme)**.
 
-Currently there are two themes: `theme.Material` and `theme.HQ`. Material is the default theme.
+There are three themes: `theme.Material`, `theme.HQ` and `Theme.Pixel`. Material is the default theme.
+
+### Example
+```
+ui_theme(theme.HQ); //Changes theme to HQ
+```
 
 # Sprites
 
