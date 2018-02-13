@@ -1,4 +1,4 @@
-# Unnamed GUI Asset (matharoo)
+# GUI Pack with Theme Support (matharoo)
 ## Documentation
 
 Creating & managing UI elements is easier than ever!
