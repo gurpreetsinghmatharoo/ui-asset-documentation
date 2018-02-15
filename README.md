@@ -4,6 +4,7 @@
 Creating & managing UI elements is easier than ever!
 
 ## [Jump To GIFs](https://github.com/gurpreetsinghmatharoo/ui-asset-documentation/blob/master/README.md#gifs)
+## [Jump To Examples](https://github.com/gurpreetsinghmatharoo/ui-asset-documentation/blob/master/README.md#examples)
 
 # Note
 
@@ -368,3 +369,48 @@ ui_theme_options(theme.Pixel, c_orange, c_blue); //Changes element color to oran
 ## Slider & Checkbox
 
 ![Slider & Checkbox](https://i.imgur.com/S001OGB.gif)
+
+# Examples
+
+## Creating a text dialog window
+
+Using this GUI pack, you can easily create text dialog windows, to get user input.
+
+Here's how you would create one:
+```
+//Window position
+var _x, _y, _w, _h;
+_x = 320;
+_y = 200;
+_w = 200;
+_h = 128;
+
+//Create elements
+dialogPanel = panel_create(_x, _y, _w, _h, "Enter Name");
+dialogTextField = textfield_create(_x+8, _y+36, _w-16, 32);
+dialogButton = button_create(_x+32, (_y+_h)-48, _w-64, 32, "OK");
+
+panel_add(dialogPanel, dialogTextField, dialogButton);
+
+//Store element IDs
+dialogButton.myPanel = dialogPanel;
+dialogButton.myTextField = dialogTextField;
+
+//Assign script
+button_script(dialogButton, dialog_button_script);
+```
+
+I first set the position and size for the dialog window, then create the elements, and add them in the panel. Then I'm initializing variables inside the button, to store the IDs of the panel & textfield, so that it knows which dialog elements it belongs to. Then I'm assigning a script to the button.
+
+This is that script:
+```
+//Set window caption to the text
+window_set_caption(myTextField.eText);
+
+//Destroy
+instance_destroy(myPanel);
+```
+
+It sets the window's caption to the text entered in the dialog text field, then destroys the panel (which automatically destroys all the elements inside it). Changing the window's caption is just an example, to show that you can retrieve the text field's text in the button script.
+
+![GIF](https://i.imgur.com/kXsZi9q.gif)
