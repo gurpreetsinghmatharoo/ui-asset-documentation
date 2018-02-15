@@ -377,7 +377,7 @@ ui_theme_options(theme.Pixel, c_orange, c_blue); //Changes element color to oran
 Using this GUI pack, you can easily create text dialog windows, to get user input.
 
 Here's how you would create one:
-```
+```java
 //Window position
 var _x, _y, _w, _h;
 _x = 320;
@@ -400,7 +400,7 @@ dialogButton.myTextField = dialogTextField;
 button_script(dialogButton, dialog_button_script);
 ```
 
-I first set the position and size for the dialog window, then create the elements, and add them in the panel. Then I'm initializing variables inside the button, to store the IDs of the panel & textfield, so that it knows which dialog elements it belongs to. Then I'm assigning a script to the button.
+I first set the position and size for the dialog window, then created the elements, and added them in the panel. Then I initialized variables inside the button, to store the IDs of the panel & textfield, so that it knows which dialog elements it belongs to. Then I'm assigning a script to the button.
 
 This is that script:
 ```
@@ -414,3 +414,5 @@ instance_destroy(myPanel);
 It sets the window's caption to the text entered in the dialog text field, then destroys the panel (which automatically destroys all the elements inside it). Changing the window's caption is just an example, to show that you can retrieve the text field's text in the button script.
 
 ![GIF](https://i.imgur.com/kXsZi9q.gif)
+
+Of course, if you don't want the panel to be destroyed when the button is clicked, remove the `instance_destroy(myPanel)` statement from the script.
